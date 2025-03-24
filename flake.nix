@@ -14,10 +14,11 @@
         overwitch = pkgs.stdenv.mkDerivation {
           name = "overwitch";
           src = pkgs.fetchFromGitHub {
-            owner = "dagargo";
+            owner = "ilya-epifanov";
             repo = "overwitch";
-            rev = "b967193d7fe428da95e5d39546416caa67229473";
-            sha256 = "sha256-OVRPbpGyxark/KZq272u34MhfcTGPmfZVo7SEW2SUYI=";
+            rev = "56dd2dbe23e78518c2007d3565f0b2222ae8f15f";
+#	    hash = nixpkgs.lib.fakeHash;
+            hash = "sha256-QCS5ZqGC9NBiU+chkFp2v76FfPJbMFqNNJneA+95NgQ=";
           };
 
           nativeBuildInputs = with pkgs; [
